@@ -49,11 +49,14 @@ function updateTime(t1, t2) {
 
     let hours = hoursContainer.innerHTML = Math.floor(delta / 3600);
     delta %= 3600;
+    hoursText.innerHTML = hours == 1 ? "hour" : "hours";
 
     let mins = minsContainer.innerHTML = Math.floor(delta / 60);
     delta %= 60;
+    minsText.innerHTML = mins == 1 ? "min" : "mins";
 
     let secs = secsContainer.innerHTML = Math.floor(delta);
+    secsText.innerHTML = secs == 1 ? "sec" : "secs";
 
     return true;
 }
