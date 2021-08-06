@@ -38,6 +38,7 @@
 }
 .countdown-time-container>*:last-child {
     font-size: 18px;
+    user-select: none;
 }
 
 .countdown-wrap>* {
