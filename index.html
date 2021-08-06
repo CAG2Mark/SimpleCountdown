@@ -7,9 +7,11 @@
     <title>Simple Countdown</title>
     <link rel="stylesheet" type="text/css" href="fonts/inter.css">
     <link rel="stylesheet" type="text/css" href="style.css?version=1">
-    
+    <link rel="stylesheet" type="text/css" href="timer-page.css?version=1">
 </head>
 <body>
+    <a href="https://github.com/CAG2Mark/SimpleCountdown" id="repo-link" target="_blank">Source code</a>
+
     <span id="setup-page">
         <div id="setup-page-wrap">
             <h3>Create a countdown.</h3>
@@ -55,8 +57,42 @@
             
         </div>
     </span>
-    <span id="timer-page"></span>
+    <span id="timer-page">
+        <a href="./index.html" id="create-countdown-link">Create your own countdown</a>
+        <div id="timer-page-wrap">
+            <h3>
+                <span id="event-name-value"></span>
+                <span style="font-weight: normal">is in</span>
+            </h3>
+            <div id="timer-container">
+                <div class="countdown-wrap">
+                    <div id="day-container" class="countdown-time-container">
+                        <p id="day-value">0</p><p class="date-text" id="day-text">days</p>
+                    </div>
+                    <div id="hour-container" class="countdown-time-container">
+                        <p id="hour-value">0</p><p class="date-text" id="hour-text">hours</p>
+                    </div>
+                </div>
 
+                <div class="countdown-wrap">
+                    <div id="min-container" class="countdown-time-container">
+                        <p id="min-value">0</p><p class="date-text" id="min-text">mins</p>
+                    </div>
+                    <div id="sec-container" class="countdown-time-container">
+                        <p id="sec-value">0</p><p class="date-text" id="sec-text">secs</p>
+                    </div>
+                </div>
+            </div>
+            <div id="share-container">
+                <img src="icons/link.png" alt="Share link" id="share-icon">
+                
+                <div class="input-wrap input-wrap-full-width" id="share-link-wrap">
+                    <input type="text" readonly="true" spellcheck="false" id="share-link-container">
+                </div>
+            </div>
+        </div>
+    </span>
     <script src="script.js"></script>
 </body>
+
 </html>

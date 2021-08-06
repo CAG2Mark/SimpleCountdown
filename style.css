@@ -5,6 +5,33 @@ html {
     color: #383838;
 }
 
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #a7a7a7;
+
+    transition: 150ms color;
+}
+
+a:hover {
+    color: #494949;
+}
+
+#repo-link {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+#create-countdown-link {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    text-align: center;
+}
+
 #setup-page {
     display: none;
 }
@@ -15,12 +42,14 @@ html {
 }
 
 #setup-page-wrap {
+    width: 50vw;
+}
+#setup-page-wrap {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     overflow: auto;
-    width: 50vw;
 }
 
 .input-wrap,
