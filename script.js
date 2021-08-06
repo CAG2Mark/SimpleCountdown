@@ -39,7 +39,6 @@ function onConfirm() {
     let utcOffset = d.getTimezoneOffset();
     let date = new Date(Date.UTC(parseInt(yr) + 2000, mon-1, day, hr, mn, 0, 0));
 
-
     console.log((!isUtc * utcOffset));
 
     let unix = date*1 + (!isUtc * utcOffset * 60000);

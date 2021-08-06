@@ -93,6 +93,10 @@ html {
         float: none !important;
         margin-top: 8px;
     }
+
+    #setup-page-wrap {
+        width: 90vw;
+    }
 }
 
 .input-wrap input {
