@@ -47,7 +47,7 @@ function updateTime(t1, t2) {
     delta %= 86400;
     daysText.innerHTML = days == 1 ? "day" : "days";
 
-    let hours = hoursContainer,innerHTML = Math.floor(delta / 3600);
+    let hours = hoursContainer.innerHTML = Math.floor(delta / 3600);
     delta %= 3600;
 
     let mins = minsContainer.innerHTML = Math.floor(delta / 60);
