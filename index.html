@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Countdown</title>
+    <link rel="stylesheet" type="text/css" href="fonts/inter.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <span id="setup-page">
+        <div id="setup-page-wrap">
+            <h3>Create a countdown.</h3>
+            <div class="input-wrap input-wrap-full-width">
+                <input type="text" placeholder="Event name" spellcheck="false" id="event-name-input">
+            </div>
+            <hr id="date-separator">
+            <div class="flex" id="date-time-container">
+                <div class="flex flex-no-wrap date-time-selector" id="date-selector">
+                    <div class="input-wrap">
+                        <input type="number" placeholder="d" max="31" min="1" id="day-input">
+                    </div>
+                    <p>/</p>
+                    <div class="input-wrap">
+                        <input type="number" placeholder="M" max="12" min="1" id="month-input">
+                    </div>
+                    <p>/</p>
+                    <div class="input-wrap">
+                        <input type="number" placeholder="y" max="99" min="1" id="year-input">
+                    </div>      
+                </div>
+    
+                <div class="flex flex-no-wrap date-time-selector">
+                    <p> at: </p>
+                    <div class="input-wrap">
+                        <input type="number" placeholder="h" max="23" min="1" id="hour-input">
+                    </div>
+                    <p>:</p>
+                    <div class="input-wrap">
+                        <input type="number" placeholder="m" max="59" min="1" id="minute-input">
+                    </div>  
+                </div>
+            </div>
+            <div id="configuration-container">
+                <label class="container" id="utc-checkmark">
+                    <span class="checkmark-text">Use UTC time</span>
+                    <input type="checkbox" checked="checked" id="utc-input">
+                    <span class="checkmark"></span>
+                </label>
+
+                <button id="confirm-button" class="button">Create</button>
+            </div>
+            
+        </div>
+    </span>
+    <span id="timer-page"></span>
+
+    <script src="script.js"></script>
+</body>
+</html>
