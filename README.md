@@ -1,6 +1,6 @@
 # SimpleCountdown
  
-Simple client-side only countdown. Live at https://countdown.markng.me/
+Simple client-side only countdown. Live at https://countdown.markng.com/
 
 You can create countdown links without using the website GUI like this:
 
